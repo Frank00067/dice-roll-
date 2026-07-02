@@ -1,6 +1,6 @@
-# 🎲 Dice Roll App
+# 🚀 ALU Venture Link
 
-A Flutter app that rolls multiple dice at once with a single tap.
+A Flutter mobile app that connects ALU students with internship opportunities from student-led startups and early-stage ventures.
 
 ## Prerequisites
 
@@ -42,5 +42,6 @@ flutter run
 ## How to Use
 
 - Launch the app
-- Tap the **Roll Dice** button to randomly roll all 5 dice at once
-- Each die shows a face from 1 to 6
+- Explore verified internship opportunities from ALU-connected startups
+- Search by role, company, or skill
+- Bookmark opportunities and apply with a single tap

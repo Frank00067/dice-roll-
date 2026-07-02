@@ -1,5 +1,5 @@
-name: dice_roll
-description: "A new Flutter project."
+name: alu_venture_link
+description: "A Flutter app connecting ALU students with startup internships."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
