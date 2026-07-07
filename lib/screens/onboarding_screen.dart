@@ -73,7 +73,7 @@ class OnboardingScreen extends StatelessWidget {
                           width: double.infinity,
                           child: ElevatedButton(
                             onPressed: () {
-                              Navigator.of(context).pushReplacementNamed('/home');
+                              Navigator.of(context).pushNamed('/auth');
                             },
                             style: ElevatedButton.styleFrom(
                               backgroundColor: const Color(0xFF2563EB),
@@ -83,7 +83,7 @@ class OnboardingScreen extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(16),
                               ),
                             ),
-                            child: const Text('Explore opportunities'),
+                            child: const Text('Get started'),
                           ),
                         ),
                       ],

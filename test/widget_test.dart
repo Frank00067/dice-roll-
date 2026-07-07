@@ -1,6 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-
-import 'package:dice_roll/main.dart';
+import 'package:alu_venture_link/main.dart';
 
 void main() {
   testWidgets('shows the ALU venture onboarding experience', (tester) async {

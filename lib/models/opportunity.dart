@@ -1,3 +1,5 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+
 class Opportunity {
   Opportunity({
     required this.id,
@@ -20,6 +22,23 @@ class Opportunity {
   final String category;
   final bool isVerified;
   final DateTime postedAt;
+
+  factory Opportunity.fromFirestore(DocumentSnapshot doc) {
+    final data = doc.data() as Map<String, dynamic>?;
+    return Opportunity(
+      id: doc.id,
+      title: data?['title'] as String? ?? 'Untitled',
+      company: data?['company'] as String? ?? 'Unknown',
+      description: data?['description'] as String? ?? '',
+      location: data?['location'] as String? ?? 'Remote',
+      duration: data?['duration'] as String? ?? 'Flexible',
+      category: data?['category'] as String? ?? 'General',
+      isVerified: data?['isVerified'] as bool? ?? false,
+      postedAt: data?['postedAt'] is Timestamp
+          ? (data?['postedAt'] as Timestamp).toDate()
+          : DateTime.now(),
+    );
+  }
 
   static List<Opportunity> sampleOpportunities() {
     return [
